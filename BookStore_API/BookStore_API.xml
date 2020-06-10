@@ -4,6 +4,45 @@
         <name>BookStore_API</name>
     </assembly>
     <members>
+        <member name="T:BookStore_API.Controllers.AuthorsController">
+            <summary>
+            Raccolta di endpoints per interagire con la tabella Authors del database
+            </summary>
+        </member>
+        <member name="M:BookStore_API.Controllers.AuthorsController.GetAuthors">
+            <summary>
+            Legge e restituisce l'elenco degli autori
+            </summary>
+            <returns>List of AuthorDTO</returns>
+        </member>
+        <member name="M:BookStore_API.Controllers.AuthorsController.GetAuthor(System.Int32)">
+            <summary>
+            Legge e restituisce un autore specifico
+            </summary>
+            <returns>AuthorDTO object</returns>
+        </member>
+        <member name="M:BookStore_API.Controllers.AuthorsController.Create(BookStore_API.DTOs.AuthorCreateDTO)">
+            <summary>
+            Crea e restitisce un nuovo autore
+            </summary>
+            <param name="authorCreateDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BookStore_API.Controllers.AuthorsController.Update(System.Int32,BookStore_API.DTOs.AuthorUpdateDTO)">
+            <summary>
+            Aggiorna un autore esistente
+            </summary>
+            <param name="id"></param>
+            <param name="authorUpdateDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BookStore_API.Controllers.AuthorsController.Delete(System.Int32)">
+            <summary>
+            Elimina un autore dal database
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="T:BookStore_API.Controllers.HomeController">
             <summary>
             Controller API di prova
