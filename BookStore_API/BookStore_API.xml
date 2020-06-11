@@ -19,6 +19,7 @@
             <summary>
             Legge e restituisce un autore specifico
             </summary>
+            <param name="id"></param>
             <returns>AuthorDTO object</returns>
         </member>
         <member name="M:BookStore_API.Controllers.AuthorsController.Create(BookStore_API.DTOs.AuthorCreateDTO)">
@@ -39,6 +40,46 @@
         <member name="M:BookStore_API.Controllers.AuthorsController.Delete(System.Int32)">
             <summary>
             Elimina un autore dal database
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BookStore_API.Controllers.BooksController">
+            <summary>
+            Raccolta di endpoints per interagire con la tabella Books del database
+            </summary>
+        </member>
+        <member name="M:BookStore_API.Controllers.BooksController.GetBooks">
+            <summary>
+            Legge e restituisce l'elenco dei libri
+            </summary>
+            <returns>List of BookDTO</returns>
+        </member>
+        <member name="M:BookStore_API.Controllers.BooksController.GetBook(System.Int32)">
+            <summary>
+            Legge e restituisce un libro specifico
+            </summary>
+            <param name="id"></param>
+            <returns>BookDTO object</returns>
+        </member>
+        <member name="M:BookStore_API.Controllers.BooksController.Create(BookStore_API.DTOs.BookCreateDTO)">
+            <summary>
+            Crea e restitisce un nuovo libro
+            </summary>
+            <param name="bookCreateDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BookStore_API.Controllers.BooksController.Update(System.Int32,BookStore_API.DTOs.BookUpdateDTO)">
+            <summary>
+            Aggiorna un libro esistente
+            </summary>
+            <param name="id"></param>
+            <param name="bookUpdateDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BookStore_API.Controllers.BooksController.Delete(System.Int32)">
+            <summary>
+            Elimina un libro dal database
             </summary>
             <param name="id"></param>
             <returns></returns>
